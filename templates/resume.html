@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="about">
+    <h2>Про мене</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu.</p>
+    <img src="{{ url_for('static', filename='images/image.png') }}" alt="Моє фото" class="img-fluid">
+</section>
+
+<section id="education">
+    <h2>Освіта</h2>
+    <ul>
+        <li>Університет: ПНУ, 2026</li>
+        <li>Курси: Вебпрограмування Python</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Навички</h2>
+    <ul>
+        <li>Python, Flask</li>
+        <li>HTML, CSS, Bootstrap</li>
+        <li>Git, SQL</li>
+    </ul>
+</section>
+
+<section id="experience">
+    <h2>Досвід роботи</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum nulla non tempus sollicitudin. Maecenas nisl nibh, gravida sed libero non, ultricies volutpat nisl. Suspendisse ullamcorper, odio non blandit finibus, nisi quam vestibulum lectus, at scelerisque mi neque at enim. Nullam tincidunt mattis risus eget dapibus. Nullam commodo, libero a pellentesque ornare, urna neque ultricies dui, quis elementum neque urna id neque.</p>
+</section>
+{% endblock %}
